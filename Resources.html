@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nathan's DM Screen</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        
+    <div class="container"> 
+        <div class="center-cropped">
+        </div>
+        
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="Home.html">Home</a>
+            <a class="nav-link" href="Info.html">Information</a>
+            <a class="nav-link" href="Economics.html">Economics</a>
+            <a class="nav-link" href="Proficiencies.html">Proficiencies</a>
+            <a class="nav-link" href="Bookkeeping.html">Bookkeeping</a>
+            <a class="nav-link" href="Resources.html">Resources</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+        
+        <div class="sidebar">
+        <aside class="inbar">
+            <audio id="myaudio" controls="controls"loop="loop" Your browser does not support the audio tag>
+            </audio>
+            </aside>
+        </div>
+        
+        <div class="resourcelib">
+        
+        <h1>Resources</h1>
+            
+        
+        <div class="column">
+              <div class="row">
+                <div class="col">
+                  <h1>Roll20</h1>
+                    <h2>The Virtual Tabletop</h2>
+                </div>
+                <div class="col">
+                  <a href="https://roll20.net/welcome"><img src="Images/Roll20-OG.png" alt="Roll20 Website" style="width:50%;height:50%;"></a>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="row">
+                <div class="col">
+                  <h1>Purpleworm</h1>
+                  <h2>Basic Ruleset</h2>
+                </div>
+                <div class="col">
+                  <a href="https://www.purpleworm.org/rules/"><img src="Images/WORM.gif" alt="Purpleworm Website"></a>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="row">
+                <div class="col">
+                  <h1>Google Drive</h1>
+                  <h2>Note Resources</h2>
+                </div>
+                <div class="col">
+                  <a href="https://drive.google.com/drive/u/0/my-drive"><img src="Images/hh_drive_96dp.png" alt="My Google Drive"></a>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="row">
+                <div class="col">
+                  <h1>Tabletop Audio</h1>
+                  <h2>Music</h2>
+                </div>
+                <div class="col">
+                  <a href="https://tabletopaudio.com/"><img src="Images/TabletopAudio.jpg" alt="Tabletop Audio" style="width:50%;height:50%;"></a>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        <div class="footer">
+            <p  class="footp">DM Screen</p>
+        </div>
+        
+    </div>
+        
+        <!-- JavaScript -->
+        <script type="text/javascript">
+        var sounds = new Array();
+        sounds[0]="Audio/Yuletide.mp3";
+        sounds[1]="Audio/Solemnvow.mp3";
+        sounds[2]="Audio/Beforethestorm.mp3";
+
+        function getRandomSounds() {
+            var randomNum = Math.floor(Math.random()*sounds.length);
+            document.getElementById("myaudio").src=sounds[randomNum];
+        }
+        getRandomSounds();
+    </script>
+
+    </body>
+</html>

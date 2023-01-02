@@ -1,0 +1,496 @@
+html {
+    box-sizing: border-box;
+    font-family: Trebuchet MS;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background-color: beige;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.center-cropped {
+    width: 100;
+    height: 200px;
+    background-image: url(Images/NonDesolateNonWinter.png);
+    background-position: 77% 76.5%;
+    background-repeat: no-repeat;
+}
+
+tr.divider {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-weight: normal;
+    text-align: center;
+    font-style: normal;
+}
+
+table {
+    border: 0px;
+    border-collapse: collapse;
+}
+
+.table-info {
+    border-collapse: collapse;
+    margin: 7px;
+}
+
+th {
+    text-align: center;
+}
+tr:first-child td {
+    text-align: center;
+    border: none;
+    font-weight: bold;
+    
+}
+tr:nth-child(2) {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+tr:last-child {
+    border-bottom: 1px solid black;
+}
+td:first-child {
+    border-left: 1px solid black;
+}
+td:last-child {
+    border-right: 1px solid black;
+    padding-right: 10px;
+}
+
+tr:nth-child(6n-1) td, tr:nth-child(6n-2) td, tr:nth-child(6n-3) 
+
+td {
+    background: #cccccc;
+}
+td {
+    vertical-align: middle;
+    padding: 0px px;
+}
+th + td {
+    text-align: center;
+}
+
+tr.indented td {
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-left: 0px;
+}
+
+.navbar {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    justify-content: center;
+}
+
+nav a {
+    width: 130px;
+    margin: 10px;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: mediumseagreen;
+    color: whitesmoke;
+    display: inline-block;
+    justify-content: center;
+}
+
+nav a:hover {
+    background-color: whitesmoke;
+    color: mediumseagreen;
+}
+
+
+#info {
+    display: flex;
+    width: 85%;
+    float: right;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+button {
+    width: 150px;
+    height: 35px;
+    margin: 20px;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: mediumseagreen;
+    color: whitesmoke;
+    display: inline-block;
+    justify-content: center;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: whitesmoke;
+    color: mediumseagreen;
+}
+
+audio {
+    width: 200px;
+    height: 55px;
+    margin: 10px;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: darkred;
+    color: whitesmoke;
+    display: inline-block;
+    justify-content: center;
+}
+
+.main-index {
+    color: black;
+    padding: 20px;
+    margin: 10px;
+    width: 80%;
+    float: right;
+    border: 10px double black;
+}
+
+.resourcelib {
+    color: black;
+    padding: 20px;
+    margin: 10px;
+    width: 80%;
+    float: right;
+    border: 10px double black;
+}
+
+.resourcelib h1{
+    text-align: center;
+}
+
+.col {
+    display: inline;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+.column {
+    margin: auto;
+    column-count: 2;
+    text-align: center;
+    
+}
+
+.sidebar {
+    display: flex;
+    background-color: beige;
+    border: 8px double black;
+    padding: 0px;
+    margin: 0;
+    overflow: auto;
+    position: fixed;
+    height: auto;
+    width: 16vw;
+}
+
+.sidebarbook {
+    display: flex;
+    background-color: beige;
+    border: 8px double black;
+    padding: 0px;
+    margin: 0;
+    height: auto;
+    overflow: hidden;
+    position: fixed;
+    width: 16vw;
+}
+
+.inbar {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.innav {
+    width: 150px;
+    height: 35px;
+    margin: 10px;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: mediumseagreen;
+    color: whitesmoke;
+    display: inline-block;
+    justify-content: center;
+}
+
+.innav:hover {
+    background-color: whitesmoke;
+    color: mediumseagreen;
+}
+
+
+.innavr20 {
+    width: 150px;
+    height: 35px;
+    margin: 10px;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: deeppink;
+    color: whitesmoke;
+    display: inline-block;
+    justify-content: center;
+}
+
+.innavr20:hover {
+    background-color: whitesmoke;
+    color: deeppink;
+}
+
+.innavpw {
+    width: 150px;
+    height: 35px;
+    margin: 10px;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: purple;
+    color: whitesmoke;
+    display: inline-block;
+    justify-content: center;
+}
+
+.innavpw:hover {
+    background-color: whitesmoke;
+    color: purple;
+}
+
+.innavgd {
+    width: 150px;
+    height: 35px;
+    margin: 10px;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: #4285F4;
+    color: whitesmoke;
+    display: inline-block;
+    justify-content: center;
+}
+
+.innavgd:hover {
+    background-color: whitesmoke;
+    color: #4285F4;
+}
+
+.innavgs {
+    width: 150px;
+    height: 35px;
+    margin: 10px;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid black;
+    background-color:  #0F9D58;
+    color: whitesmoke;
+    display: inline-block;
+    justify-content: center;
+}
+
+.innavgs:hover {
+    background-color: whitesmoke;
+    color:  #0F9D58;
+}
+
+.innavtp {
+    width: 150px;
+    height: 35px;
+    margin: 10px;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: mediumseagreen;
+    color: whitesmoke;
+    display: inline-block;
+    justify-content: center;
+}
+
+.innavtp:hover {
+    background-color: whitesmoke;
+    color: mediumseagreen;
+}
+
+.innav1480 {
+    width: 150px;
+    height: 35px;
+    margin: 10px;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: lightcoral;
+    color: whitesmoke;
+    display: inline-block;
+    justify-content: center;
+}
+
+.innav1480:hover {
+    background-color: whitesmoke;
+    color: lightcoral;
+}
+
+.innav1479 {
+    width: 150px;
+    height: 35px;
+    margin: 10px;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: teal;
+    color: whitesmoke;
+    display: inline-block;
+    justify-content: center;
+}
+
+.innav1479:hover {
+    background-color: whitesmoke;
+    color: teal;
+}
+
+.innav1478 {
+    width: 150px;
+    height: 35px;
+    margin: 10px;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: mediumpurple;
+    color: whitesmoke;
+    display: inline-block;
+    justify-content: center;
+}
+
+.innav1478:hover {
+    background-color: whitesmoke;
+    color: mediumpurple;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .sidebarbook {
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 0;
+    display: inline-block;
+  }
+  .sidebarbook a {float: left;}
+  div.content {margin-left: 0;}
+    
+    .main-index {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebarbook a {
+    text-align: center;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 0;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+    
+    .main-index {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+button {
+    margin: 10px;
+}
+
+#proftable {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: stretch;
+    margin: 10px;
+    background-color: beige;
+}
+
+#proftable th {
+    padding: 5px;
+    border: 2px solid black;
+}
+
+#proftable td {
+    padding: 5px;
+    border: 1px solid black;
+    background-color: beige;
+}
+
+#myDesc {
+    color: black;
+    padding: 20px;
+    margin: 15px;
+    width: 80%;
+    float: right;
+    justify-content: center;
+}
+
+.ecoframe {
+    float: right;
+}
+
+.worldmap {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 10px;
+    width: 80%;
+    float: right;
+    border: solid 3px black;
+}
+
+.calen {
+    float: right;
+}
+
+.footer {
+    background-color: mediumseagreen;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+    clear: both;
+}
+
+.footp {
+    color: whitesmoke;
+}
+
+p {
+    margin: 0;
+    color: black;
+}

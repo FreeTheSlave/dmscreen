@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nathan's DM Screen</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        
+    <div class="container"> 
+        <div class="center-cropped">
+        </div>
+        
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="Home.html">Home</a>
+            <a class="nav-link" href="Info.html">Information</a>
+            <a class="nav-link" href="Economics.html">Economics</a>
+            <a class="nav-link" href="Proficiencies.html">Proficiencies</a>
+            <a class="nav-link" href="#">Bookkeeping</a>
+            <a class="nav-link" href="Resources.html">Resources</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+        
+        <div class="sidebarbook" style="display:inline-block;">
+        <aside class="inbar">
+            <audio id="myaudio" controls="controls" loop="loop" Your browser does not support the audio tag>
+            </audio>
+            <a class="innav1480" href="https://docs.google.com/spreadsheets/d/18pbkrDvcYceCl4NHBxHMnk3y-NvjSE6GTAt-qZrGlHY/edit#gid=689634265" target="_blank">1480</a>
+            <a class="innav1479" href="https://docs.google.com/spreadsheets/d/1PekaQgIJu7WpJ46xMefeiaEMeb7IPuKjLr9CI5uAG_U/edit#gid=0" target="_blank">1479</a>
+            <a class="innav1478" href="https://docs.google.com/spreadsheets/d/10smPcme8EZ4eCLrxT_TeZmhS0KbIeZUFuLC4_jqaKe8/edit#gid=0" target="_blank">1478</a>
+            
+            <a class="innavtp" href="#">Top of Page</a>
+        </aside>
+        </div>
+    
+    <div class="content">
+        <img src="Images/NonDesolateNonWinter.png" alt="World Map" class="worldmap">  
+        
+            <iframe class="calen" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSzdEeRVwio7VNZ6KTAZNtA1BVGyfk6TjNgSg6hRBCX0Tq_BR4F3dUsicGxS9pUihFwo3QFfEDCdP8F/pubhtml?widget=true&amp;headers=false" name="iframe1" id="iframe1" frameborder="0" border="0" cellspacing="0" scrolling="no" style="border: 10px double black; width: 80%; height: 700px; margin: 10px;"></iframe>
+
+        
+        
+     
+            <iframe class="calen" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQEi9-0lMpOJXzOuA0ECTfZ-e-giuSm8k2QH0lcfq2JddQtstSzei-r3tVGbc5HUra0SAYt7-u_t79g/pubhtml?widget=true&amp;headers=false" name="iframe1" id="iframe1" frameborder="0" border="0" cellspacing="0" scrolling="no" style="border: 10px double black; width: 80%; height: 700px; margin: 10px"></iframe>
+           
+        
+    
+            <iframe class="calen" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTelSSGsYr46gSu3K_qk9sZrA3QI0OcqLccEzOUTyE3BnSniWtPA4N1k8i4otz3IeZrEq7-SNrT3mh4/pubhtml?widget=true&amp;headers=false" name="iframe1" id="iframe1" frameborder="0" border="0" cellspacing="0" scrolling="no" style="border: 10px double black; width: 80%; height: 700px; margin: 10px"></iframe>
+        </div>
+    </div>
+       
+        <div class="footer">
+            <p  class="footp">DM Screen</p>
+        </div>
+        
+        <!-- JavaScript -->
+        <script type="text/javascript">
+        var sounds = new Array();
+        sounds[0]="Audio/Yuletide.mp3";
+        sounds[1]="Audio/Solemnvow.mp3";
+        sounds[2]="Audio/Beforethestorm.mp3";
+
+        function getRandomSounds() {
+            var randomNum = Math.floor(Math.random()*sounds.length);
+            document.getElementById("myaudio").src=sounds[randomNum];
+        }
+        getRandomSounds();
+       
+    </script>
+
+    </body>
+</html>
