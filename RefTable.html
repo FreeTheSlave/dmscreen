@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nathan's DM Screen</title>
+        
+        <link rel="stylesheet" href="main.css">
+    </head>
+    
+    <body>
+        
+<div class="container"> 
+    <div class="center-cropped">
+    </div>
+        
+    <nav class="navbar">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="Home.html">Home</a>
+            <a class="nav-link" href="#">Ref. Tables</a>
+            <a class="nav-link" href="Economics.html">Economics</a>
+            <a class="nav-link" href="Proficiencies.html">Proficiencies</a>
+            <a class="nav-link" href="WeaponProficiencies.html">Weapon Proficiencies</a>
+            <a class="nav-link" href="Bookkeeping.html">Bookkeeping</a>
+            <a class="nav-link" href="Resources.html">Resources</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="sidebar">
+        <aside class="inbar">
+            <a class="innavr20" href="https://app.roll20.net/campaigns/details/9107791/of-mystery-and-might">Roll20</a>
+            <a class="innavpw" href="https://www.purpleworm.org/rules" target="_blank">Purple Worm</a>
+            <a class="innavtp" href="#">Top of Page</a>
+        </aside>
+        </div>
+        
+    <div id="info">      
+    <table class="table-info" id="surprisemodifiers">
+			<tbody><tr>
+				<td colspan="2">Surprise Modifiers</td>
+			</tr>
+			<tr>
+				<td>Situation</td>
+				<td>Adj</td>
+			</tr>
+			<tr>
+				<td>Ambush</td>
+				<td>-4</td>
+                
+			</tr>
+			<tr>
+				<td>Every 10 members of other party</td>
+				<td>+1</td>
+			</tr>
+			<tr>
+				<td>Extreamly still conditions</td>
+				<td>+2</td>
+			</tr>
+			<tr>
+				<td>Heavy Fog</td>
+				<td>-2</td>
+			</tr>
+			<tr>
+				<td>In darkness</td>
+				<td>-4</td>
+			</tr>
+			<tr>
+				<td>In poor light or rain</td>
+				<td>-2</td>
+			</tr>
+			<tr>
+				<td>Party fleeing or panicked</td>
+				<td>-2</td>
+			</tr>
+			<tr>
+				<td>Suspicious, expecting attack</td>
+				<td>+2</td>
+			</tr>
+			<tr>
+				<td>vs. camouflaged creatures</td>
+				<td>-1 – -3</td>
+			</tr>
+	 		<tr>
+				<td>vs. creatures with distinctive odor</td>
+				<td>+2</td>
+			</tr>
+			<tr>
+				<td>vs. silenced or invisible creatures</td>
+				<td>-2</td>
+			</tr>
+		</tbody></table>
+        
+        <table class="table-info" id="initiativesituation">
+			<tbody><tr>
+				<td colspan="7">Initiative Modifiers: Situations</td>
+			</tr>
+			<tr>
+				<td>Situation</td>
+				<td>Adj</td>
+                <td>C</td>
+                <td>L</td>
+                <td>M</td>
+                <td>T</td>
+			</tr>
+			<tr>
+				<td>Asleep, meditating</td>
+				<td><strike>Act</strike></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>Bow specialist, ready</td>
+                <td>1<sup>st</sup></td>                
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>Foreign environment, drunk</td>
+				<td>+6</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>Hasted</td>
+				<td>-2</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>Hintered (climbing, held)</td>
+				<td>+3</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>Preoccupied (stuyding, praying)</td>
+				<td>+2</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>On higher ground</td>
+				<td>-1</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>Set to receive charge</td>
+				<td>-2</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>Slowed</td>
+				<td>+2</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>Wading in deep water</td>
+				<td>+4</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>Wading, slippery footing</td>
+				<td>+2</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+			</tr>
+		</tbody></table>
+        
+        <table class="table-info" id="initiativeaction">
+			<tbody><tr>
+				<td colspan="2">Initiative Modifiers: Actions</td>
+			</tr>
+			<tr>
+				<td>Action</td>
+				<td>Adj</td>
+                
+			</tr>
+			<tr>
+				<td>Breath weapon</td>
+				<td>+1</td>
+			</tr>
+			<tr>
+				<td>Innate spell ability</td>
+				<td>+3</td>
+			</tr>
+			<tr>
+				<td>Movement: Tiny</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td>Movement: Small, medium</td>
+				<td>+3</td>
+			</tr>
+			<tr>
+				<td>Movement: Large</td>
+				<td>+6</td>
+			</tr>
+			<tr>
+				<td>Movement: Huge</td>
+				<td>+9</td>
+			</tr>
+			<tr>
+				<td>Movement: Gargantuan</td>
+				<td>+12</td>
+			</tr>
+			<tr>
+				<td>Potion</td>
+				<td>+4</td>
+			</tr>
+			<tr>
+				<td>Ring, wand, misc. magic</td>
+				<td>+3</td>
+			</tr>
+			<tr>
+				<td>Rod</td>
+				<td>+1</td>
+			</tr>
+			<tr>
+				<td>Staff</td>
+				<td>+2</td>
+			</tr>
+                
+		</tbody></table>
+        
+        <table class="table-info" id="moralmodifiers" >
+			<tbody><tr>
+				<td colspan="2">Moral Modifiers</td>
+			</tr>
+			<tr>
+				<td>Situation</td>
+				<td>Adj</td>
+			</tr>
+			<tr class="divider">
+				<td colspan="2">Allies</td>
+			</tr>
+			<tr>
+				<td>Abandoned by friends</td>
+				<td>-6</td>
+			</tr>
+			<tr>
+				<td>Most powerfuly ally killed</td>
+				<td>-4</td>
+			</tr>
+			<tr>
+				<td>Creature lost 50% of hp or group</td>
+				<td>-4</td>
+			</tr>
+			<tr>
+				<td>Creature lost 25% of hp or group</td>
+				<td>-2</td>
+			</tr>
+			<tr>
+				<td>Leader is of different alignment</td>
+				<td>-1</td>
+			</tr>
+			<tr>
+				<td>Outnumber opponents 3:1</td>
+				<td>+2</td>
+			</tr>
+			<tr>
+				<td>Spellcaster ally</td>
+				<td>+2</td>
+			</tr>
+			<tr class="divider">
+				<td colspan="2">Enemies</td>
+			</tr>
+			<tr>
+				<td>Unable to affect opponent</td>
+				<td>-8</td>
+			</tr>
+			<tr>
+				<td>Outnumbered 3:1</td>
+				<td>-4</td>
+			</tr>
+			<tr>
+				<td>No enemy slain</td>
+				<td>-2</td>
+			</tr>
+			<tr>
+				<td>Creature oppose spellcasters</td>
+				<td>-2</td>
+			</tr>
+			<tr>
+				<td>Creature is fighting hated enemy</td>
+				<td>+4</td>
+			</tr>
+			<tr class="divider">
+				<td colspan="2">Misc</td>
+			</tr>
+			<tr>
+				<td>Creature was surprised</td>
+				<td>-2</td>
+			</tr>
+			<tr>
+				<td>Each extra check in a round</td>
+				<td>-1</td>
+			</tr>
+			<tr>
+				<td>Defensive terrain advantage</td>
+				<td>+1</td>
+			</tr>
+			<tr>
+				<td>Defending home</td>
+				<td>+3</td>
+			</tr>
+			<tr>
+				<td>NPC has been treated poorly</td>
+				<td>-4</td>
+			</tr>
+			<tr>
+				<td>NPC has been favored</td>
+				<td>+2</td>
+			</tr>
+		</tbody></table>
+        
+        <table class="table-info" id="combatmodifiers">
+			<tbody><tr>
+				<td colspan="7">
+					<div>Combat Modifiers</div>
+				</td>
+			</tr>
+			<tr>
+				<td>Situation</td>
+				<td>Adj</td>
+                <td>C</td>
+                <td>L</td>
+                <td>M</td>
+                <td>T</td>
+			</tr>
+			<tr class="divider">
+				<td colspan="7">Attack Modifiers</td>
+			</tr>
+			<tr>
+				<td>Attacker on higher ground</td>
+				<td>+1</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>Back attack</td>
+				<td>+2</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>Flank attack</td>
+				<td> +1</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>Charging</td>
+				<td>+2</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>Low light</td>
+				<td>-1</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>Starlight</td>
+				<td>-3</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>No light / Invisible</td>
+				<td>-4</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>Attacker drunk</td>
+				<td>-1 – -6</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>Target sleeping or held</td>
+				<td>Auto</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>Target sitting or kneeling</td>
+				<td>+2</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>Target stunned or prone</td>
+				<td>+4</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>(Missile) Target sitting or kneeling</td>
+				<td>-2</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>(Missile) Target prone</td>
+				<td>-4</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>(Missile) Medium Range</td>
+				<td>-2</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>(Missile) Long Range</td>
+				<td>-5</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+			</tr>
+			<tr class="divider">
+				<td colspan="7">AC Modifiers</td>
+			</tr>
+			<tr>
+				<td>Total darkness</td>
+				<td>-4</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>Charged this round</td>
+				<td>-1</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td>Surprised</td>
+				<td>-1</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+			</tr>
+		</tbody></table>
+        
+        
+        <table class="table-info" id="weapon-armor-type">
+			<tbody><tr>
+				<td colspan="4"><div>Weapon Type vs. Armor Modifiers</div></td>
+			</tr>
+			<tr>
+				<td>Armor Type</td>
+				<td>Slash</td>
+				<td>Pierce</td>
+				<td>Bludg.</td>
+			</tr>
+			<tr>
+				<td>Banded mail</td>
+				<td>+2</td>
+				<td>0</td>
+				<td>+1</td>
+			</tr>
+			<tr>
+				<td>Brigandine</td>
+				<td>+1</td>
+				<td>+1</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td>Chain mail</td>
+				<td>+2</td>
+				<td>0</td>
+				<td>-2</td>
+			</tr>
+			<tr>
+				<td>Field plate</td>
+				<td>+3</td>
+				<td>+1</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td>Full plate</td>
+				<td>+4</td>
+				<td>+3</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td>Leather armor</td>
+				<td>0</td>
+				<td>-2</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td>Plate mail</td>
+				<td>+3</td>
+				<td>0</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td>Ring mail</td>
+				<td>+1</td>
+				<td>+1</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td>Scale mail</td>
+				<td>0</td>
+				<td>+1</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td>Splint mail</td>
+				<td>0</td>
+				<td>+1</td>
+				<td>+2</td>
+			</tr>
+			<tr>
+				<td>Studded leather</td>
+				<td>+2</td>
+				<td>+1</td>
+				<td>0</td>
+			</tr>
+		</tbody></table>
+      
+      <table class="table-info" id="coverandconcealment">
+			<tbody><tr>
+				<td colspan="3"><div>Cover and Concealment</div></td>
+			</tr>
+			<tr>
+				<td>Target is:</td>
+				<td>Cover</td>
+				<td>Concealment</td>
+			</tr>
+			<tr>
+				<td>25% Hidden</td>
+				<td>-2</td>
+				<td>-1</td>
+			</tr>
+			<tr>
+				<td>50% Hidden</td>
+				<td>-4</td>
+				<td>-2</td>
+			</tr>
+			<tr>
+				<td>75% Hidden</td>
+				<td>-7</td>
+				<td>-3</td>
+			</tr>
+			<tr>
+				<td>90% Hidden</td>
+				<td>-10</td>
+				<td>-4</td>
+			</tr>
+		</tbody></table>
+      
+      <table class="table-info" id="turningundead" style="top:750px; left: 73px; width: 700px;">
+			<tbody><tr>
+				<td colspan="13">Turning Undead</td>
+			</tr>
+			<tr style="border-bottom: 0px;">
+				<td rowspan="2" style="border-bottom: 1px solid black;">Type or HD</td>
+				<td colspan="12">Level of Priest</td>
+			</tr>
+			<tr class="indented">
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+				<td>10-11</td>
+				<td>12-13</td>
+				<td>14+</td>
+			</tr>
+			<tr>
+				<td>Skeleton or 1 HD</td>
+				<td>10</td>
+				<td>7</td>
+				<td>4</td>
+				<td>T</td>
+				<td>T</td>
+				<td>D</td>
+				<td>D</td>
+				<td>D*</td>
+				<td>D*</td>
+				<td>D*</td>
+				<td>D*</td>
+				<td>D*</td>
+			</tr>
+			<tr>
+				<td>Zombie</td>
+				<td>13</td>
+				<td>10</td>
+				<td>7</td>
+				<td>4</td>
+				<td>T</td>
+				<td>T</td>
+				<td>D</td>
+				<td>D</td>
+				<td>D*</td>
+				<td>D*</td>
+				<td>D*</td>
+				<td>D*</td>
+			</tr>
+			<tr>
+				<td>Ghoul or 2 HD</td>
+				<td>16</td>
+				<td>13</td>
+				<td>10</td>
+				<td>7</td>
+				<td>4</td>
+				<td>T</td>
+				<td>T</td>
+				<td>D</td>
+				<td>D</td>
+				<td>D*</td>
+				<td>D*</td>
+				<td>D*</td>
+			</tr>
+			<tr>
+				<td>Shadow or 3-4 HD</td>
+				<td>19</td>
+				<td>16</td>
+				<td>13</td>
+				<td>10</td>
+				<td>7</td>
+				<td>4</td>
+				<td>T</td>
+				<td>T</td>
+				<td>D</td>
+				<td>D</td>
+				<td>D*</td>
+				<td>D*</td>
+			</tr>
+			<tr>
+				<td>Wight or 5 HD</td>
+				<td>20</td>
+				<td>19</td>
+				<td>16</td>
+				<td>13</td>
+				<td>10</td>
+				<td>7</td>
+				<td>4</td>
+				<td>T</td>
+				<td>T</td>
+				<td>D</td>
+				<td>D</td>
+				<td>D*</td>
+			</tr>
+			<tr>
+				<td>Ghast</td>
+				<td>-</td>
+				<td>20</td>
+				<td>19</td>
+				<td>16</td>
+				<td>13</td>
+				<td>10</td>
+				<td>7</td>
+				<td>4</td>
+				<td>T</td>
+				<td>T</td>
+				<td>D</td>
+				<td>D</td>
+			</tr>
+			<tr>
+				<td>Wraith or 6 HD</td>
+				<td>-</td>
+				<td>-</td>
+				<td>20</td>
+				<td>19</td>
+				<td>16</td>
+				<td>13</td>
+				<td>10</td>
+				<td>7</td>
+				<td>4</td>
+				<td>T</td>
+				<td>T</td>
+				<td>D</td>
+			</tr>
+			<tr>
+				<td>Mummy or 7 HD</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>20</td>
+				<td>19</td>
+				<td>16</td>
+				<td>13</td>
+				<td>10</td>
+				<td>7</td>
+				<td>4</td>
+				<td>T</td>
+				<td>T</td>
+			</tr>
+			<tr>
+				<td>Spectre or 8 HD</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>20</td>
+				<td>19</td>
+				<td>16</td>
+				<td>13</td>
+				<td>10</td>
+				<td>7</td>
+				<td>4</td>
+				<td>T</td>
+			</tr>
+			<tr>
+				<td>Vampire or 9 HD</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>20</td>
+				<td>19</td>
+				<td>16</td>
+				<td>13</td>
+				<td>10</td>
+				<td>7</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<td>Ghost or 10 HD</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>20</td>
+				<td>19</td>
+				<td>16</td>
+				<td>13</td>
+				<td>10</td>
+				<td>7</td>
+			</tr>
+			<tr>
+				<td>Lich or 11+ HD</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>20</td>
+				<td>19</td>
+				<td>16</td>
+				<td>13</td>
+				<td>10</td>
+			</tr>
+			<tr>
+				<td>Special</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>20</td>
+				<td>19</td>
+				<td>16</td>
+				<td>13</td>
+			</tr>
+		</tbody></table>
+      
+      <table class="table-info" id="charsavingthrows">
+			<tbody><tr>
+				<td colspan="7">Character Saving Throws</td>
+			</tr>
+			<tr>
+				<td>Class</td>
+				<td>Level</td>
+				<td>PPD</td>
+				<td>RSW</td>
+				<td>PP</td>
+				<td>BW</td>
+				<td>Spell</td>
+			</tr>
+			<tr>
+				<td rowspan="7" style="vertical-align: middle; background: gold;">Priest</td>
+				<td style="border-left: 1px solid black;">1-3</td>
+				<td>10</td>
+				<td>14</td>
+				<td>13</td>
+				<td>16</td>
+				<td>15</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">4-6</td>
+				<td>9</td>
+				<td>13</td>
+				<td>12</td>
+				<td>15</td>
+				<td>14</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">7-9</td>
+				<td>7</td>
+				<td>11</td>
+				<td>10</td>
+				<td>13</td>
+				<td>12</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">10-12</td>
+				<td>6</td>
+				<td>10</td>
+				<td>9</td>
+				<td>12</td>
+				<td>11</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">13-15</td>
+				<td>5</td>
+				<td>9</td>
+				<td>8</td>
+				<td>11</td>
+				<td>10</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">16-18</td>
+				<td>4</td>
+				<td>8</td>
+				<td>7</td>
+				<td>10</td>
+				<td>9</td>
+			</tr>
+			<tr class="underline">
+				<td style="text-align: center;">19+</td>
+				<td>2</td>
+				<td>6</td>
+				<td>5</td>
+				<td>8</td>
+				<td>7</td>
+			</tr>
+			<tr>
+				<td rowspan="6" style="vertical-align: middle; background: mediumpurple;">Rogue</td>
+				<td style="border-left: 1px solid black;">1-4</td>
+				<td>13</td>
+				<td>14</td>
+				<td>12</td>
+				<td>16</td>
+				<td>15</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">5-8</td>
+				<td>12</td>
+				<td>12</td>
+				<td>11</td>
+				<td>15</td>
+				<td>13</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">9-12</td>
+				<td>11</td>
+				<td>10</td>
+				<td>10</td>
+				<td>14</td>
+				<td>11</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">13-16</td>
+				<td>10</td>
+				<td>8</td>
+				<td>9</td>
+				<td>13</td>
+				<td>9</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">17-20</td>
+				<td>9</td>
+				<td>6</td>
+				<td>8</td>
+				<td>12</td>
+				<td>7</td>
+			</tr>
+			<tr class="underline">
+				<td style="text-align: center;">21+</td>
+				<td>8</td>
+				<td>4</td>
+				<td>7</td>
+				<td>11</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<td rowspan="10" style="vertical-align: middle; background: red;">Warrior</td>
+				<td style="border-left: 1px solid black;" "text-align: center;">0</td>
+				<td>16</td>
+				<td>18</td>
+				<td>17</td>
+				<td>20</td>
+				<td>19</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">1-2</td>
+				<td>14</td>
+				<td>16</td>
+				<td>15</td>
+				<td>17</td>
+				<td>17</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">3-4</td>
+				<td>13</td>
+				<td>15</td>
+				<td>14</td>
+				<td>16</td>
+				<td>16</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">5-6</td>
+				<td>11</td>
+				<td>13</td>
+				<td>12</td>
+				<td>13</td>
+				<td>14</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">7-8</td>
+				<td>10</td>
+				<td>12</td>
+				<td>11</td>
+				<td>12</td>
+				<td>13</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">9-10</td>
+				<td>8</td>
+				<td>10</td>
+				<td>9</td>
+				<td>9</td>
+				<td>11</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">11-12</td>
+				<td>7</td>
+				<td>9</td>
+				<td>8</td>
+				<td>8</td>
+				<td>10</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">13-14</td>
+				<td>5</td>
+				<td>7</td>
+				<td>6</td>
+				<td>5</td>
+				<td>8</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">15-16</td>
+				<td>4</td>
+				<td>6</td>
+				<td>5</td>
+				<td>4</td>
+				<td>7</td>
+			</tr>
+			<tr class="underline">
+				<td style="text-align: center;">17+</td>
+				<td>3</td>
+				<td>5</td>
+				<td>4</td>
+				<td>4</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<td rowspan="5" style="vertical-align: middle; background: lightblue; border-bottom: 1px solid black;">Wizard</td>
+				<td style="border-left: 1px solid black;">1-5</td>
+				<td>14</td>
+				<td>11</td>
+				<td>13</td>
+				<td>15</td>
+				<td>12</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">6-10</td>
+				<td>13</td>
+				<td>9</td>
+				<td>11</td>
+				<td>13</td>
+				<td>10</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">11-15</td>
+				<td>11</td>
+				<td>7</td>
+				<td>9</td>
+				<td>11</td>
+				<td>8</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">16-20</td>
+				<td>10</td>
+				<td>5</td>
+				<td>7</td>
+				<td>9</td>
+				<td>6</td>
+			</tr>
+			<tr class="underline">
+				<td style="text-align: center;">21+</td>
+				<td>8</td>
+				<td>3</td>
+				<td>5</td>
+				<td>7</td>
+				<td>4</td>
+			</tr>
+		</tbody></table>
+      
+      <table class="table-info" id="encounterreactions">
+			<tbody><tr>
+				<td colspan="6">Encounter Reactions</td>
+			</tr>
+			<tr style="border-bottom: 0px;">
+				<td rowspan="2" style="border-bottom: 1px solid black;">2d10</td>
+				<td colspan="5" style="text-align: center;">Player Characters are:</td>
+			</tr>
+			<tr>
+				<td style="background: Green; border-bottom: 1px solid black; border-left: 0px; text-align: center;">Friendly</td>
+				<td style="background: gold; border-bottom: 1px solid black;">Indifferent</td>
+				<td style="background: orange; border-bottom: 1px solid black;">Threatening</td>
+				<td style="background: red; border-bottom: 1px solid black;">Hostile</td>
+				<td style="background: white; border-bottom: 1px solid black;">%</td>
+			</tr>
+			<tr>
+				<td>&#8804; 2</td>
+				<td>Friendly</td>
+				<td>Friendly</td>
+				<td>Friendly</td>
+				<td>Flight</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Friendly</td>
+				<td>Friendly</td>
+				<td>Friendly</td>
+				<td>Flight</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Friendly</td>
+				<td>Friendly</td>
+				<td>Flight</td>
+				<td>Flight</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Friendly</td>
+				<td>Friendly</td>
+				<td>Flight</td>
+				<td>Flight</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>Friendly</td>
+				<td>Indifferent</td>
+				<td>Cautious</td>
+				<td>Cautious</td>
+				<td>12</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>Friendly</td>
+				<td>Indifferent</td>
+				<td>Cautious</td>
+				<td>Cautious</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td>Indifferent</td>
+				<td>Indifferent</td>
+				<td>Cautious</td>
+				<td>Cautious</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>9</td>
+				<td>Indifferent</td>
+				<td>Indifferent</td>
+				<td>Cautious</td>
+				<td>Threatening</td>
+				<td>21</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>Indifferent</td>
+				<td>Indifferent</td>
+				<td>Threatening</td>
+				<td>Threatening</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>11</td>
+				<td>Indifferent</td>
+				<td>Indifferent</td>
+				<td>Threatening</td>
+				<td>Threatening</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>12</td>
+				<td>Cautious</td>
+				<td>Indifferent</td>
+				<td>Threatening</td>
+				<td>Threatening</td>
+				<td>28</td>
+			</tr>
+			<tr>
+				<td>13</td>
+				<td>Cautious</td>
+				<td>Cautious</td>
+				<td>Threatening</td>
+				<td>Hostile</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>14</td>
+				<td>Cautious</td>
+				<td>Cautious</td>
+				<td>Threatening</td>
+				<td>Hostile</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>15</td>
+				<td>Cautious</td>
+				<td>Cautious</td>
+				<td>Threatening</td>
+				<td>Hostile</td>
+				<td>21</td>
+			</tr>
+			<tr>
+				<td>16</td>
+				<td>Cautious</td>
+				<td>Cautious</td>
+				<td>Hostile</td>
+				<td>Hostile</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>17</td>
+				<td>Threatening</td>
+				<td>Threatening</td>
+				<td>Hostile</td>
+				<td>Hostile</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>18</td>
+				<td>Threatening</td>
+				<td>Threatening</td>
+				<td>Hostile</td>
+				<td>Hostile</td>
+				<td>12</td>
+			</tr>
+			<tr>
+				<td>19</td>
+				<td>Hostile</td>
+				<td>Hostile</td>
+				<td>Hostile</td>
+				<td>Hostile</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>20+</td>
+				<td>Hostile</td>
+				<td>Hostile</td>
+				<td>Hostile</td>
+				<td>Hostile</td>
+				<td>3</td>
+			</tr>
+		</tbody></table>
+      
+      <table class="table-info" id="itemhitpoints" style="top: 575px; left: 20px;">
+			<tbody><tr>
+				<td colspan="3">Item Hit Points</td>
+			</tr>
+			<tr>
+				<td>Item</td>
+				<td>Hit Points</td>
+				<td>Attack Mode</td>
+			</tr>
+			<tr>
+				<td>Ceramic Vessel</td>
+				<td>1-9</td>
+				<td>B/S</td>
+			</tr>
+			<tr>
+				<td>Chain</td>
+				<td>4-32</td>
+				<td>S</td>
+			</tr>
+			<tr>
+				<td>Glass Bottle</td>
+				<td>1-2</td>
+				<td>B</td>
+			</tr>
+			<tr>
+				<td>Glass Pane</td>
+				<td>1</td>
+				<td>All</td>
+			</tr>
+			<tr>
+				<td>Leather, Common</td>
+				<td>2-8</td>
+				<td>S/P</td>
+			</tr>
+			<tr>
+				<td>Leather, Thick</td>
+				<td>3-12</td>
+				<td>S/P</td>
+			</tr>
+			<tr>
+				<td>Rope</td>
+				<td>2-4</td>
+				<td>S</td>
+			</tr>
+			<tr>
+				<td>Wood Chair</td>
+				<td>2-9</td>
+				<td>B/S</td>
+			</tr>
+			<tr>
+				<td>Wooden Door, Thick</td>
+				<td>30-50</td>
+				<td>B/S</td>
+			</tr>
+			<tr>
+				<td>Wooden Door, Med</td>
+				<td>10-30</td>
+				<td>B/S</td>
+			</tr>
+			<tr>
+				<td>Wooden Pole</td>
+				<td>2-12</td>
+				<td>B/S</td>
+			</tr>
+			<tr>
+				<td>Wooden Table</td>
+				<td>10-20</td>
+				<td>B/S</td>
+			</tr>
+		</tbody></table>
+      
+      <table class="table-info" id="itemsavingthrows" style="right: 20px; top: 665px; width: 490px">
+			<tbody><tr>
+				<td colspan="10">Item Saving Throws</td>
+			</tr>
+			<tr>
+				<td>Item</td>
+				<td>Acid</td>
+				<td>Cr Blow</td>
+				<td>Disint</td>
+				<td>Fall</td>
+				<td>M. Fire</td>
+				<td>N. Fire</td>
+				<td>Cold</td>
+				<td>Bolt</td>
+				<td>Elect</td>
+			</tr>
+			<tr>
+				<td>Bone / Ivory</td>
+				<td>11</td>
+				<td>16</td>
+				<td>19</td>
+				<td>6</td>
+				<td>9</td>
+				<td>3</td>
+				<td>2</td>
+				<td>8</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>Cloth</td>
+				<td>12</td>
+				<td>-</td>
+				<td>19</td>
+				<td>-</td>
+				<td>16</td>
+				<td>13</td>
+				<td>2</td>
+				<td>18</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>Glass</td>
+				<td>5</td>
+				<td>20</td>
+				<td>19</td>
+				<td>14</td>
+				<td>7</td>
+				<td>4</td>
+				<td>6</td>
+				<td>17</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>Leather</td>
+				<td>10</td>
+				<td>3</td>
+				<td>19</td>
+				<td>2</td>
+				<td>6</td>
+				<td>4</td>
+				<td>3</td>
+				<td>13</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>Metal</td>
+				<td>13</td>
+				<td>7</td>
+				<td>17</td>
+				<td>3</td>
+				<td>6</td>
+				<td>2</td>
+				<td>2</td>
+				<td>12</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>Oils</td>
+				<td>16</td>
+				<td>-</td>
+				<td>19</td>
+				<td>-</td>
+				<td>19</td>
+				<td>17</td>
+				<td>5</td>
+				<td>19</td>
+				<td>16</td>
+			</tr>
+			<tr>
+				<td>Paper</td>
+				<td>16</td>
+				<td>7</td>
+				<td>19</td>
+				<td>-</td>
+				<td>19</td>
+				<td>19</td>
+				<td>2</td>
+				<td>19</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>Potions</td>
+				<td>15</td>
+				<td>-</td>
+				<td>19</td>
+				<td>-</td>
+				<td>17</td>
+				<td>14</td>
+				<td>13</td>
+				<td>18</td>
+				<td>15</td>
+			</tr>
+			<tr>
+				<td>Rock</td>
+				<td>3</td>
+				<td>17</td>
+				<td>18</td>
+				<td>8</td>
+				<td>3</td>
+				<td>2</td>
+				<td>2</td>
+				<td>14</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>Rope</td>
+				<td>12</td>
+				<td>2</td>
+				<td>19</td>
+				<td>-</td>
+				<td>10</td>
+				<td>6</td>
+				<td>2</td>
+				<td>9</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>Wood, thick</td>
+				<td>8</td>
+				<td>10</td>
+				<td>19</td>
+				<td>2</td>
+				<td>7</td>
+				<td>5</td>
+				<td>2</td>
+				<td>12</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>Wood, thin</td>
+				<td>9</td>
+				<td>13</td>
+				<td>19</td>
+				<td>2</td>
+				<td>11</td>
+				<td>9</td>
+				<td>2</td>
+				<td>10</td>
+				<td>2</td>
+			</tr>
+		</tbody></table>
+      
+      <table class="table-info" id="poisons">
+			<tbody><tr>
+				<td colspan="4">Poison Strength</td>
+			</tr>
+			<tr>
+				<td>Class</td>
+				<td>Method</td>
+				<td>Onset</td>
+				<td>Strength</td>
+			</tr>
+			<tr>
+				<td>A</td>
+				<td>Injected</td>
+				<td>10-30 min</td>
+				<td>15/0</td>
+			</tr>
+			<tr>
+				<td>B</td>
+				<td>Injected</td>
+				<td>2-12 min</td>
+				<td>20/d3</td>
+			</tr>
+			<tr>
+				<td>C</td>
+				<td>Injected</td>
+				<td>2-5 min</td>
+				<td>25/2d4</td>
+			</tr>
+			<tr>
+				<td>D</td>
+				<td>Injected</td>
+				<td>1-2min</td>
+				<td>30/2d6</td>
+			</tr>
+			<tr>
+				<td>E</td>
+				<td>Injected</td>
+				<td>Immediate</td>
+				<td>Death/20</td>
+			</tr>
+			<tr>
+				<td>F</td>
+				<td>Injected</td>
+				<td>Immediate</td>
+				<td>Death/0</td>
+			</tr>
+			<tr>
+				<td>G</td>
+				<td>Ingested</td>
+				<td>2-12 hours</td>
+				<td>20/10</td>
+			</tr>
+			<tr>
+				<td>H</td>
+				<td>Ingested</td>
+				<td>1-4 hours</td>
+				<td>20/10</td>
+			</tr>
+			<tr>
+				<td>I</td>
+				<td>Ingested</td>
+				<td>1-2 min</td>
+				<td>30/15</td>
+			</tr>
+			<tr>
+				<td>J</td>
+				<td>Ingested</td>
+				<td>1-4 min</td>
+				<td>Death/20</td>
+			</tr>
+			<tr>
+				<td>K</td>
+				<td>Contact</td>
+				<td>2-8 min</td>
+				<td>5/0</td>
+			</tr>
+			<tr>
+				<td>L</td>
+				<td>Contact</td>
+				<td>2-8 min</td>
+				<td>10/0</td>
+			</tr>
+			<tr>
+				<td>M</td>
+				<td>Contact</td>
+				<td>1-4 min</td>
+				<td>20/5</td>
+			</tr>
+			<tr>
+				<td>N</td>
+				<td>Contact</td>
+				<td>1 min</td>
+				<td>Death/25</td>
+			</tr>
+			<tr>
+				<td>O</td>
+				<td>Injected</td>
+				<td>2-24 min</td>
+				<td>Paralytic</td>
+			</tr>
+			<tr>
+				<td>P</td>
+				<td>Injected</td>
+				<td>1-3 hours</td>
+				<td>Debilitative</td>
+			</tr>
+		</tbody></table>
+      
+      <table class="table-info" id="hitdieimmunity">
+			<tbody><tr>
+				<td colspan="2">Hit Dice vs Immunity</td>
+			</tr>
+			<tr>
+				<td>Hit Dice</td>
+				<td>Hits Creature Requiring</td>
+			</tr>
+			<tr>
+				<td>4+1 or more</td>
+				<td>+1 weapon</td>
+			</tr>
+			<tr>
+				<td>6+2 or more</td>
+				<td>+2 weapon</td>
+			</tr>
+			<tr>
+				<td>8+3 or more</td>
+				<td>+3 weapon</td>
+			</tr>
+			<tr>
+				<td>10+4 or more</td>
+				<td>+4 weapon</td>
+			</tr>
+		</tbody></table>
+      
+</div>
+
+    <div class="footer">
+        <p class="footp">DM Screen</p>
+    </div>  
+        
+</div>
+
+    </body>
+</html>
