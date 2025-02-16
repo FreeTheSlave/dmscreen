@@ -96,7 +96,7 @@ tr.indented td {
 }
 
 nav a {
-    width: 130px;
+    width: 150px;
     margin: 10px;
     text-decoration: none;
     padding: 5px;
@@ -419,7 +419,7 @@ button {
 
 #proftable {
     display: flex;
-    width: 100%;
+    width: 99%;
     justify-content: center;
     align-items: stretch;
     margin: 10px;
