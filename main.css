@@ -189,30 +189,6 @@ audio {
     
 }
 
-.sidebar {
-    display: flex;
-    background-color: beige;
-    border: 8px double black;
-    padding: 0px;
-    margin: 0;
-    overflow: auto;
-    position: fixed;
-    height: auto;
-    width: 16vw;
-}
-
-.sidebarbook {
-    display: flex;
-    background-color: beige;
-    border: 8px double black;
-    padding: 0px;
-    margin: 0;
-    height: auto;
-    overflow: hidden;
-    position: fixed;
-    width: 16vw;
-}
-
 .inbar {
     display: block;
     margin: auto;
