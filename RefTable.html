@@ -1656,6 +1656,83 @@
   </tbody>
 </table>
 
+<form id="movementForm">
+
+<strong>Race</strong><br>
+<label><input type="radio" name="race" value="12" checked> Human (12)</label><br>
+<label><input type="radio" name="race" value="9"> Dwarf (9)</label><br>
+<label><input type="radio" name="race" value="12"> Elf (12)</label><br>
+<label><input type="radio" name="race" value="6"> Gnome (6)</label><br>
+<label><input type="radio" name="race" value="12"> Half-Elf (12)</label><br>
+<label><input type="radio" name="race" value="6"> Halfling (6)</label>
+
+<hr>
+
+<strong>Terrain</strong><br>
+<label><input type="radio" name="terrain" value="0.5" checked> Clear / Farmland (½)</label><br>
+<label><input type="radio" name="terrain" value="1"> Plains / Grassland (1)</label><br>
+<label><input type="radio" name="terrain" value="2"> Scrub / Brushland (2)</label><br>
+<label><input type="radio" name="terrain" value="3"> Desert / Sand (3)</label><br>
+<label><input type="radio" name="terrain" value="2"> Forest, Light (2)</label><br>
+<label><input type="radio" name="terrain" value="3"> Forest, Medium (3)</label><br>
+<label><input type="radio" name="terrain" value="4"> Forest, Heavy (4)</label><br>
+<label><input type="radio" name="terrain" value="6"> Jungle, Medium (6)</label><br>
+<label><input type="radio" name="terrain" value="8"> Jungle, Heavy (8)</label><br>
+<label><input type="radio" name="terrain" value="2"> Hills, Rolling (2)</label><br>
+<label><input type="radio" name="terrain" value="4"> Hills, Steep / Mountains Low (4)</label><br>
+<label><input type="radio" name="terrain" value="6"> Mountains, Medium (6)</label><br>
+<label><input type="radio" name="terrain" value="8"> Mountains, High (8)</label><br>
+<label><input type="radio" name="terrain" value="3"> Tundra (3)</label><br>
+<label><input type="radio" name="terrain" value="4"> Wetlands / Moor (4)</label><br>
+<label><input type="radio" name="terrain" value="8"> Marsh / Swamp (8)</label>
+
+<hr>
+
+<strong>Environment</strong><br>
+<label><input type="radio" name="env" value="1" checked> Normal</label><br>
+<label><input type="radio" name="env" value="0.5"> Heavy Fog / Rain (×2 cost)</label><br>
+<label><input type="radio" name="env" value="0.33"> Torrential Rain / Mud (×3 cost)</label><br>
+<label><input type="radio" name="env" value="0.25"> Blizzard (×4 cost)</label><br>
+<label><input type="radio" name="env" value="1.2"> Favorable Winds (+20%)</label><br>
+<label><input type="radio" name="env" value="0.8"> Scorching Heat / Cold</label>
+
+<hr>
+
+<strong>Path or Road</strong><br>
+<label><input type="radio" name="road" value="1" checked> None</label><br>
+<label><input type="radio" name="road" value="1.25"> Trail</label><br>
+<label><input type="radio" name="road" value="1.5"> Road</label>
+
+</form>
+
+<hr>
+
+<strong>Miles per Day:</strong>
+<span id="output">0</span>
+
+<script>
+function calculateMovement() {
+  const baseMove = Number(document.querySelector('#overland-movement input[name="race"]:checked').value);
+  const terrainCost = Number(document.querySelector('#overland-movement input[name="terrain"]:checked').value);
+  const envMod = Number(document.querySelector('#overland-movement input[name="env"]:checked').value);
+  const roadMod = Number(document.querySelector('#overland-movement input[name="road"]:checked').value);
+
+  // AD&D 2e baseline: Move 12 = 24 miles/day on clear terrain
+  let miles = (baseMove / 12) * (24 / terrainCost);
+  miles *= envMod;
+  miles *= roadMod;
+
+  document.getElementById("output").textContent = miles.toFixed(1);
+}
+
+document.querySelectorAll('#overland-movement input').forEach(input => {
+  input.addEventListener("change", calculateMovement);
+});
+
+calculateMovement();
+</script>
+		
+
 </div>
 
     <div class="footer">
@@ -1666,3 +1743,4 @@
 
     </body>
 </html>
+
